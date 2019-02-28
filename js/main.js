@@ -64,7 +64,7 @@ async function joinFilmAndShips () {
     starshipsList.innerHTML += `
       <div class="data hidden ship-button article-into-section-left-container" data-ship="ships-${index}">
         <button class="data article-into-section-left-container">
-          Ships of movie ${filmNames[index]}: ${filmsAndShips[index]}
+          Ships from movie ${filmNames[index]}: ${filmsAndShips[index]}
         </button>
       </div>
       `
