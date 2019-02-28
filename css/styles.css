@@ -1,0 +1,97 @@
+.header-with-photo-and-title {
+  box-sizing: border-box;
+  display: flex;
+  height: 20vh;
+  margin-top: 2vh;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+.header-photo {
+  border-radius: 50%;
+  height: 20vh;
+  margin: auto 5vw;
+}
+
+.header-title {
+  font-size: 5vw;
+  margin: auto 5vh;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navbar-position {
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  margin: 2vh auto;
+  width: 100vw;
+}
+
+.section-position {
+  box-sizing: border-box;
+  display: flex;
+  height: 64vh;
+}
+
+.article-into-section-left-container {
+  width: 30vw;
+}
+
+.aside-into-section-right-container {
+  width: 70vw;
+}
+
+.section-example {
+  max-width: 100vw;
+}
+
+.films-list, .starships-list {
+  display: inline-block;
+  width: 48vw;
+  vertical-align: top;
+}
+
+.title-list {
+  display: block;
+}
+
+.data {
+  border: 1px solid black;
+  word-wrap: break-word;
+  display: flex;
+  width: 45vw;
+  height: 30vh;
+  /* overflow: hidden; */
+}
+
+.hidden {
+  display: none;
+  border: none;
+}
+
+/* .location {
+  font-family: fantasy;
+}
+
+.Planet {
+  font-weight: bold;
+}
+
+.unknown {
+  color: blue;
+} */
+
+@media (max-width: 575px) {
+  .section-position {
+    display: block;
+  }
+
+  .article-into-section-left-container {
+    width: 100vw;
+  }
+
+  .aside-into-section-right-container {
+    width: 100vw;
+  }
+}
