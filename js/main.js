@@ -56,15 +56,15 @@ async function joinFilmAndShips () {
 
   for (let index = 0; index < filmNames.length; index++) {
     filmsList.innerHTML += `
-      <div class="data film-button aside-into-section-right-container" id="ships-${index}">
-      <button class="data aside-into-section-right-container">Movie: ${filmNames[index]}</button>
+      <div class="film-button aside-into-section-right-container" id="ships-${index}">
+      <button class="data aside-into-section-right-container text-info">
+      Movie: ${filmNames[index]}</button>
       </div>
       `
-
     starshipsList.innerHTML += `
-      <div class="data hidden ship-button article-into-section-left-container" data-ship="ships-${index}">
+      <div class="hidden ship-button article-into-section-left-container" data-ship="ships-${index}">
         <button class="data article-into-section-left-container">
-          Ships from movie ${filmNames[index]}: ${filmsAndShips[index]}
+          <p>Ships from movie <span class="text-color">${filmNames[index]}</span>: ${filmsAndShips[index]}</p>
         </button>
       </div>
       `
@@ -77,6 +77,7 @@ async function joinFilmAndShips () {
   }
   const movieButtons = document.querySelectorAll('.film-button');
   const shipButtons = document.querySelectorAll('.ship-button')
+
   for (let movieButton of movieButtons) {
     movieButton.addEventListener('click', function(event){
       for (let shipButton of shipButtons) {
